@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletTut</display-name>
+  
+  <filter>
+  	<filter-name>logfilter</filter-name>
+  	<filter-class>filter.LogFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>logfilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>helloServlet</servlet-name>
+  	<servlet-class>com.nghichcode.servlet.Hello</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>initParams</servlet-name>
+  	<servlet-class>com.nghichcode.servlet.InitParams</servlet-class>
+  	<init-param>
+	  	<param-name>emailGlob</param-name>
+	  	<param-value>abc@gmail.copm</param-value>
+  	</init-param>
+  	<init-param>
+	  	<param-name>emailLoc</param-name>
+	  	<param-value>xzc@gmail.com</param-value>
+  	</init-param>
+  </servlet>
+  <servlet>
+  	<servlet-name>anoinitParams</servlet-name>
+  	<servlet-class>com.nghichcode.servlet.AnnoInitParams</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>error</servlet-name>
+  	<servlet-class>com.nghichcode.servlet.ErrorHandler</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>helloServlet</servlet-name>
+  	<url-pattern>/hi</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>error</servlet-name>
+  	<url-pattern>/error</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>initParams</servlet-name>
+  	<url-pattern>/params</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>anoinitParams</servlet-name>
+  	<url-pattern>/aparams</url-pattern>
+  </servlet-mapping>
+
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
