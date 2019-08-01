@@ -13,7 +13,11 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.version>5.0.2.RELEASE</spring.version>
+    <springframework.version>4.3.17.RELEASE</springframework.version>
+    <!-- <version>4.1.4.RELEASE</version> -->
     <hibernate.version>5.2.12.Final</hibernate.version>
+    <jackson.core>2.9.9.1</jackson.core>
+    <!-- <version>2.9.3</version> -->
   </properties>
 
   <dependencies>
@@ -27,12 +31,12 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>4.1.4.RELEASE</version>
+      <version>${springframework.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>4.1.4.RELEASE</version>
+      <version>${springframework.version}</version>
     </dependency>
  
    <dependency>
@@ -73,17 +77,18 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.9.3</version>
+      <version>${jackson.core}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.9.3</version>
+      <version>${jackson.core}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>2.9.3</version>
+      <version>${jackson.core}</version>
+      
     </dependency>
 
   </dependencies>
