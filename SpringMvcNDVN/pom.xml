@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<springsecurity.version>4.2.13.RELEASE</springsecurity.version>
+		<springsecurity.version>5.3.3.RELEASE</springsecurity.version>
 		<spring.version>5.0.2.RELEASE</spring.version>
 		<hibernate.version>5.2.12.Final</hibernate.version>
 		<jackson.core>2.9.9.1</jackson.core>
