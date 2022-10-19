@@ -12,7 +12,7 @@
 	<properties>
 		<spring.version>5.0.2.RELEASE</spring.version>
 		<hibernate.version>5.2.12.Final</hibernate.version>
-		<jackson.core>2.9.9.1</jackson.core>
+		<jackson.core>2.13.4.1</jackson.core>
 	</properties>
 
 	<dependencies>
